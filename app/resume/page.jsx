@@ -1,12 +1,24 @@
 "use client";
 
 import {
+  FaAngular,
+  FaApple,
+  FaBitbucket,
+  FaBootstrap,
   FaCss3,
+  FaDocker,
   FaFigma,
+  FaGithub,
+  FaGitlab,
   FaHtml5,
+  FaJenkins,
   FaJs,
+  FaLaravel,
+  FaLinux,
   FaNodeJs,
+  FaPhp,
   FaReact,
+  FaWindows,
 } from "react-icons/fa";
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -31,7 +43,7 @@ const about = {
   info: [
     {
       fieldName: "Name",
-      fieldValue: "Firoj Kabir",
+      fieldValue: "Md Firoj Kabir",
     },
     {
       fieldName: "Phone",
@@ -152,6 +164,54 @@ const skills = {
       icon: <FaFigma />,
       name: "figma",
     },
+    {
+      icon: <FaPhp />,
+      name: "php",
+    },
+    {
+      icon: <FaAngular />,
+      name: "angular",
+    },
+    {
+      icon: <FaBootstrap />,
+      name: "bootstrap",
+    },
+    {
+      icon: <FaLaravel />,
+      name: "laravel",
+    },
+    {
+      icon: <FaGithub />,
+      name: "github",
+    },
+    {
+      icon: <FaGitlab />,
+      name: "gitlab",
+    },
+    {
+      icon: <FaBitbucket />,
+      name: "bitbucket",
+    },
+    {
+      icon: <FaDocker />,
+      name: "docker",
+    },
+    {
+      icon: <FaJenkins />,
+      name: "jenkins",
+    },
+    {
+      icon: <FaApple />,
+      name: "apple",
+    },
+    {
+      icon: <FaLinux />,
+      name: "linux",
+    },
+    {
+      icon: <FaWindows />,
+      name: "windows",
+    },
   ],
 };
 
@@ -254,8 +314,8 @@ const Resume = () => {
                       <li key={index}>
                         <TooltipProvider delayDuration={100}>
                           <Tooltip>
-                            <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group">
-                              <div className="text-6xl group-hover:text-accent transition-all duration-300">
+                            <TooltipTrigger className="w-full h-[100px] bg-[#232329] rounded-xl flex justify-center items-center group">
+                              <div className="text-5xl group-hover:text-accent transition-all duration-300">
                                 {skill.icon}
                               </div>
                             </TooltipTrigger>
